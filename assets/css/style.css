@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+.service-enabled * {
+	border:1px solid red !important;
+}
+body {
+	font-family: Roboto;
+	font-size: 16px;
+	color:#fff;
+	background-image: url(../img/Background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+section {
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+html {
+	margin-top: 50px
+}
+header {
+	justify-content: flex-end;
+}
+:hover {
+	transition: .2s;
+}
+.container {
+	width:1070px;
+	margin: 0 auto;
+}
+.form-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.form {
+	min-width: 320px;
+	flex-direction: column;
+    margin: 0 20px;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+}
+.h1-form-title {
+	color:#fff;
+	margin-bottom: 15px;
+}
+.form input{
+	min-width: -webkit-fill-available;
+}
+.btn {
+	width: -webkit-fill-available;
+	height: 40px;
+	border: 0;
+	text-transform: uppercase;
+}
+/*Цвет желтый #ffff00*/
+.bg-yellow {
+	background-color: #ffff00;
+}
+.bg-yellow:hover {
+	background-color: #d0d000;
+}
+.font-bold {
+	font-weight: 700;
+}
+/*Верхняя панель*/
+.game-top-panel {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	z-index: 999;
+}
+.game-top-panel a {
+	color: #fff;
+	text-decoration: none;
+}
+.game-top-panel a:hover {
+	color: #d3fbf9;
+	text-decoration: underline;
+}
+.game-top-panel ul {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+}
+.game-top-panel ul li {
+	display: flex;
+}
+.game-top-panel ul li:not(:first-child) {
+	margin-left: 10px;
+}
+.game-top-panel ul li a {
+	padding: 10px 15px;
+	border: 1px solid #ffff00;
+	text-transform: uppercase;
+}
+.game-top-panel .menubtn {
+	cursor: pointer;
+}
+/*Нижняя панель*/
+.game-bottom-panel {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	z-index: 999;
+}
+/*--------------------Игровой интерфейс--------------------*/
+#game_interface .newPlayer .form {
+	width: 281px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 15px;
+	margin: 0 auto;
+}
+.form label {
+	cursor: text;
+}
+.greetings {
+	color: #fff;
+}
+#game_interface .characters_select {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#game_interface .characters_select .char-box {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 30%;
+	height: 400px;
+	margin: 0 5px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #ddd
+}
+#game_interface .characters_select .char-box.new {
+	background-color: #eee
+}
+#game_interface .characters_select .char-box .img-wrapper {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#game_interface .characters_select .char-box .img-wrapper.character-avatar {
+	border: 2px solid #red;
+}
+#game_interface .characters_select .char-box .img-wrapper img {
+	width: 100%;
+}
+#game_interface {
+	
+}
+.lastnews {
+
+}
+.lastnews ul{
+	flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lastnews ul li {
+	padding:30px;
+}
+.lastnews .hotest-news {
+display: inline-block;
+width: 100%;
+height: 100px;
+}
+.lastnews ul li:not(.hotest-news) {
+	flex: 1;
+	height: 50px;
+}

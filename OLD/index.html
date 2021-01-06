@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<title>Крутецкая игра :)</title>
+		<link href="./assets/css/resetcss.css" rel="stylesheet" type="text/css">
+		<link href="./assets/css/floating-label-forms.css" rel="stylesheet" type="text/css">
+		<link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="http://zabavnik.club/wp-content/uploads/2018/07/zloy_smaylik_kartinka_3_13201320.jpg">
+	</head>
+	<body id="game_interface" class="load">
+		<div class="game-top-panel">
+			<div class="container">
+				<ul class="game-top-list">
+					<li><a id="home" class="menubtn">Home</a></li>
+					<li><a id="campain" class="menubtn">Campain</a></li>
+					<li><a id="logout" class="menubtn">Logout</a></li>
+					<li><a id="loginadmin" class="menubtn">Admin</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="game-bottom-panel">
+			<div class="container">
+				<div class="copyrights">Все права защищены авторским<br> правом! @Pufon</div>
+			</div>
+		</div>
+		<div class="container section newPlayer" style="display:block;">
+			<div class="form">
+				<div class="form-label-group">
+					<input type="email" id="email" class="form-control" placeholder="Введи эмеил">
+					<label for="email">Введи эмеил</label>
+				</div>
+				<div class="form-label-group">
+					<input type="password" id="password" class="form-control" placeholder="Введи пароль">
+					<label for="password">Введи пароль</label>
+				</div>
+				<div class="form-label-group">
+					<input type="text" id="name" class="form-control" placeholder="Твое имя">
+					<label for="name">Представься</label>
+				</div>
+				<button type="submit" class="btn bg-yellow font-bold submitButtonStart">Регистрация</button>
+			</form>
+		</div>
+		<div class="container section block_3 registeredPlayer" style="display:none">
+			<div class="greetings text-center">
+				<p>Привет, <span class="name">User</span>!</p>
+				<p>Выбери персонажа</p>
+			</div>
+			<div class="characters_select">
+				<div class="char-box">
+					<p>Имя персонажа <span class="character-name">Цири</span>!</p>
+					<div class="img-wrapper character-avatar">
+						<img src="./assets/img/Ciri_avatar.jpg" alt="Аватар">
+					</div>
+					<p>Уровень <span class="character-level">0</span></p>
+					<p>Мощь <span class="character-power">0</span></p>
+					
+				</div>
+				<div class="char-box new">Создать новый персонаж</div>
+			</div>
+			<div class="playground">
+				<div class="game-menu"></div>
+			</div>
+		</div>
+		<script src="./assets/js/vars.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
