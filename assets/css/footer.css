@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*Нижняя панель*/
+.game-bottom-panel {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 999;
+  border-top: 1px solid var(--orange); }
+  .game-bottom-panel .copyrights {
+    text-align: center; }
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,130 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic');
+.service-enabled * { border: 1px solid red !important; }
+*{margin:0;padding:0;}
+body { font-family: Roboto; font-size: 16px; color: #fff;position: relative;background-color: #000;}
+section { padding: 30px 0; display: flex; flex-direction: column; }
+html { margin-top: 50px }
+header { justify-content: flex-end; }
+label {margin: 8px 0;}
+form {margin-bottom: 32px;}
+a {color:var(--orange);text-decoration: underline;}
+a:hover {color:var(--orange);}
+a:visited {color:rgba(255, 140, 0, 0.3);}
+
+:hover { transition: .2s; }
+.container { width: 1170px; margin: 0 auto; padding-left: 15px; padding-right:15px ; z-index: 2;}
+@media (max-width:991px) {
+	.container { width: 720px; }
+}
+@media (max-width:767px) {
+	.container { width: 100%; }
+}
+.page-bg-main {background-image: url('/assets/img/home-background.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center;width: 100%;height: 100%; position: absolute; z-index: 0;opacity: .3}
+.page-bg-grid {background: url('/assets/img/gridbg_glow.png') repeat center top;width: 100%;height: 100%;   position: absolute;z-index: 0;}
+.form-wrapper { display: flex; flex-direction: column; justify-content: center; z-index: 1;}
+.label-group { position: relative; margin-bottom: 1rem; }
+.form { display: flex; flex-direction: column; min-width: 320px; width: 50%; margin: 0 auto 32px; padding: 30px; background: rgba(255, 140, 0, 0.2);
+    border: 1px solid rgba(255, 140, 0, 0.3); }
+.h1-form-title { color: #fff; margin-bottom: 15px; }
+.form input { width: -webkit-fill-available; height: 40px; padding: 5px 15px; background-color: rgba(25, 13, 0, 0.8); color:var(--orange); border:1px solid rgba(255, 140, 0, 0.3);}
+.form input:focus {border:1px solid rgba(255, 140, 0, 1)}
+.form input::placeholder {color: var(--darkorange);}
+.form label { cursor: help; display: block;}
+.btn-wrapper {display: flex; justify-content: flex-end;}
+.btn { width: fit-content; height: 40px; border: 0; text-transform: uppercase; padding: 0 30px;margin: 10px 0;}
+.title {font-size: 24px; margin-bottom: 20px;}
+.subtitle {font-size: 16px; margin-bottom: 10px;}
+.checkbox {
+	display: inline-block;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: var(--darkorange);
+    width: auto;
+    line-height: 22px;
+position: relative;
+    padding-left: 5px;
+    margin-top: 0;
+}
+
+.checkbox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.35);
+}
+span.valid {
+    content: "L";
+    position: absolute;
+    left: 7px;
+    top: 2px;
+    color: rgba(255, 140, 0, 1);
+    text-shadow: 1px 1px 3px rgba(255, 140, 0, 1);
+    transform: rotateX(-180deg) rotate(135deg);
+    opacity: 0;
+}
+.checkbox input {opacity: 0;height: 20px;width: 20px;}
+.checkbox input[type="checkbox"]:checked+span.valid {opacity: 1;} */
+
+/*Цвет желтый #ffff00*/
+/* .bg-yellow { background-color: #ffff00; }
+.bg-yellow:hover { background-color: #d0d000; }
+.font-bold { font-weight: 700; } */
+
+/*Цвет оранжевый #ff8c00*/
+/* :root{--orange:rgba(255, 140, 0, 1);--darkorange:rgb(183, 100, 0);}
+.bg-orange { background-color: var(--orange); }
+.bg-orange:hover { background-color: #ff8c00; }
+.bg-orange-a02 {background-color:rgba(255, 140, 0, 0.2);}
+.font-orange {color: var(--orange);}
+.font-darkorange {color:var(--darkorange);} */
+
+/* .text-uppercase {text-transform: uppercase;} */
+
+/*Верхняя панель*/
+/* .game-top-panel { position: fixed; top: 0; width: 100%; height: auto; background-color: rgba(0, 0, 0, 0.5); color: #fff; z-index: 999; border-bottom: 1px solid var(--orange);}
+.game-top-panel a { color: #fff; text-decoration: none; }
+.game-top-panel a:hover { color: #d3fbf9; text-decoration: underline; }
+.game-top-panel ul { display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start; width: 100%; height: 100%; }
+.game-top-panel ul li { display: flex; }
+.game-top-panel ul li:not(:first-child) { margin-left: 10px; }
+.game-top-panel ul li a { padding: 10px 15px;  text-transform: uppercase; }
+.game-top-panel .menubtn { cursor: pointer; }
+.server-time {
+    display: block;
+} */
+/*Нижняя панель*/
+/* .game-bottom-panel { position: relative; bottom: 0; width: 100%; height: 50px; background-color: rgba(0, 0, 0, 0.5); color: #fff; z-index: 999; border-top: 1px solid var(--orange);}
+.game-bottom-panel .copyrights {text-align: center} */
+
+/*--------------------Игровой интерфейс--------------------*/
+#game_interface .newPlayer .form { width: 281px; background-color: rgba(0, 0, 0, 0.5); padding: 15px; margin: 0 auto; }
+
+.greetings { color: #fff; }
+#game_interface .characters_select { display: flex; flex-direction: row; justify-content: center; }
+#game_interface .characters_select .char-box { display: inline-flex; justify-content: center; align-items: center; position: relative; width: 30%; height: 400px; margin: 0 5px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #ddd }
+#game_interface .characters_select .char-box.new { background-color: #eee }
+#game_interface .characters_select .char-box .img-wrapper { width: 100px; height: 100px; position: absolute; top: 10px; left: 10px; }
+#game_interface .characters_select .char-box .img-wrapper.character-avatar { border: 2px solid #red; }
+#game_interface .characters_select .char-box .img-wrapper img { width: 100%; }
+
+.slider-wrapper {position: relative;min-height: 300px; display: flex; flex-direction: row; overflow: hidden;}
+.slider-wrapper .slider-item {min-width: 100vw;display: flex; justify-content: center;align-items: center; /* transition: 1s ease; */ /* animation: slider-slide 30s linear infinite; */}
+.slide1 {background-color: transparent /* orange */}
+.slide2 {background-color: transparent /* green */}
+.slide3 {background-color: transparent /* blue */}
+
+@keyframes slider-slide {
+	0 {transform: translateX(0vw)}
+	24%{transform: translateX(0vw)}
+	25% {transform: translateX(-100vw)}
+	49% {transform: translateX(-100vw)}
+	50% {transform: translateX(-200vw)}
+	99% {transform: translateX(-200vw)}
+}
+

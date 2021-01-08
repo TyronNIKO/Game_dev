@@ -1,0 +1,177 @@
+@mixin df() {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+@mixin fdr() {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+@mixin fdrr() {
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+}
+
+@mixin fdc() {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+@mixin fdcr() {
+  flex-direction: column-reverse;
+  -webkit-flex-direction: column-reverse;
+}
+
+@mixin fwn() {
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+@mixin fww() {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+@mixin fwwr() {
+  flex-wrap: wrap-reverse;
+  -webkit-flex-wrap: wrap-reverse;
+}
+
+@mixin jcc() {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+@mixin jcfe() {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+@mixin jcfs() {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+@mixin jcsa() {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+@mixin jcsb() {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+@mixin aib() {
+  align-items: baseline;
+  -webkit-align-items: baseline;
+}
+
+@mixin aic() {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+@mixin aife() {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+@mixin aifs() {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+
+@mixin ais() {
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+@mixin acc() {
+  align-content: center;
+  -webkit-align-content: center;
+}
+
+@mixin acfe() {
+  align-content: flex-end;
+  -webkit-align-content: flex-end;
+}
+
+@mixin acfs() {
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+}
+
+@mixin acsa() {
+  align-content: space-around;
+  -webkit-align-content: space-around;
+}
+
+@mixin acsb() {
+  align-content: space-between;
+  -webkit-align-content: space-between;
+}
+
+@mixin acs() {
+  align-content: stretch;
+  -webkit-align-content: stretch;
+}
+
+@mixin asa() {
+  align-self: auto;
+  -webkit-align-self: auto;
+}
+
+@mixin asb() {
+  align-self: baseline;
+  -webkit-align-self: baseline;
+}
+
+@mixin asc() {
+  align-self: center;
+  -webkit-align-self: center;
+}
+
+@mixin asfe() {
+  align-self: flex-end;
+  -webkit-align-self: flex-end;
+}
+
+@mixin asfs() {
+  align-self: flex-start;
+  -webkit-align-self: flex-start;
+}
+
+@mixin ass() {
+  align-self: stretch;
+  -webkit-align-self: stretch;
+}
+
+@mixin o($order:0) {
+  order: $order;
+  -webkit-order: $order;
+}
+
+@mixin fl($grow:0,$shrink:0,$basis:auto) {
+  flex: $grow $shrink $basis;
+  -webkit-flex: $grow $shrink $basis;
+}
+
+@mixin flg($grow:0) {
+  flex-grow: $grow;
+  -webkit-grow: $grow;
+}
+
+@mixin fls($shrink:0) {
+  flex-shrink: $shrink;
+  -webkit-shrink: $shrink;
+}
+
+@mixin flb($basis:auto) {
+  flex-basis: $basis;
+  -webkit-flex-basis: $basis;
+}

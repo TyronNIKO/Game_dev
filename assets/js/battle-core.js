@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var player = {
-		name: 'VOVA',
+		name: 'VOVA1',
 		maxHealth: 500,
 		currHealth: 500,
 		atackPower: 50,
@@ -22,21 +22,23 @@ $(document).ready(function(){
 	};
 	
 	function loadPlayer(){
-		$('div.player').append('<div class="">Name: <span class="playername">'+player.name+'</span></div>');
-		$('div.player').append('<div id="playerProgress" class=""><div id="playerBar">Health: <span class="playerhealt">'+player.currHealth+'</span></div></div>');
-		$('div.player').append('<div class="">Atack: <span class="playeratack">'+player.atackPower+'</span></div>');
-		$('div.player').append('<div class="">Defence: <span class="playerdefence">'+player.defence+'</span></div>');
-		$('div.player').append('<div class="">Energy: <span class="playerenergy">'+player.energy+'</span></div>');
-		$('div.player').append('<div class="">Speed: <span class="playerspeed">'+player.speed+'</span></div>');
+		$('div.player').append(`<div class="">Name: <span class="playername"> ${player.name} </span></div>
+			<div id="playerProgress" class=""><div id="playerBar">Health: <span class="playerhealt">${player.currHealth}</span></div></div>
+			<div class="">Atack: <span class="playeratack">${player.atackPower}</span></div>
+			<div class="">Defence: <span class="playerdefence">${player.defence}</span></div>
+			<div class="">Energy: <span class="playerenergy">${player.energy}</span></div>
+			<div class="">Speed: <span class="playerspeed">${player.speed}</span></div>`
+			);
+
 	};
 	function loadEnemy(){
-		$('div.enemy').append('<div class="">Name: <span class="enemyname">'+enemy.name+'</span></div>');
-		$('div.enemy').append('<div id="enemyProgress" class=""><div id="enemyBar">Health: <span class="enemyhealt">'+enemy.currHealth+'</span></div></div>');
-		$('div.enemy').append('<div class="">Atack: <span class="enemyatack">'+enemy.atackPower+'</span></div>');
-		$('div.enemy').append('<div class="">Defence: <span class="enemydefence">'+enemy.defence+'</span></div>');
-		$('div.enemy').append('<div class="">Energy: <span class="enemyenergy">'+enemy.energy+'</span></div>');
-		$('div.enemy').append('<div class="">Speed: <span class="enemyspeed">'+enemy.speed+'</span></div>');
-
+		$('div.enemy').append(`<div class="">Name: <span class="enemyname">${enemy.name}</span></div>
+		<div id="enemyProgress" class=""><div id="enemyBar">Health: <span class="enemyhealt">${enemy.currHealth}</span></div></div>
+		<div class="">Atack: <span class="enemyatack">${enemy.atackPower}</span></div>
+		<div class="">Defence: <span class="enemydefence">${enemy.defence}</span></div>
+		<div class="">Energy: <span class="enemyenergy">${enemy.energy}</span></div>
+		<div class="">Speed: <span class="enemyspeed">${enemy.speed}</span></div>`
+		);
 	};
 	function loadControls(){
 		$('.fight').addClass('active');
@@ -121,7 +123,4 @@ $(document).ready(function(){
 			});
 		}
 		fightRepeat();
-
-
-
 });

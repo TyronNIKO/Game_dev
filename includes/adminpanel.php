@@ -1,21 +1,24 @@
-<style>
+<style type="text/css">
 	body {padding-top: 50px !important}
 </style>
-<header class="game-top-panel">
+<div class="admin-top-panel">
 	<div class="container">
-		<ul class="game-top-list">
+		<ul>
 			<li><a id="home" class="menubtn" href="/">Home</a></li>
 			<li><a id="game" class="menubtn" href="/game/">Game</a></li>
+			<li><a id="game" class="menubtn" href="/content/">Content</a></li>
 			<li><a id="logout" class="menubtn">Logout</a></li>
 			<li><a id="loginadmin" class="menubtn">Admin</a></li>
 			<li><a class="menubtn servicebtn">Service</a></li>
+			<div class="user-name-welcome"><?php if($user_nicename !== '') {echo 'Привет: '.$user_nicename;}else{echo 'Назовись';}?></div>
 		</ul>
+		<div class="server-time"><?php echo $server_time ?></div>
 	</div>
-</header>
+</div>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.servicebtn').on('click',function(){
-			$('body').toggleClass('service-enabled');
-		})
+$(document).ready(function(){
+	$('.servicebtn').on('click',function(){
+		$('body').toggleClass('service-enabled');
+	});
 });
 </script>

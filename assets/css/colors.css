@@ -1,0 +1,34 @@
+@charset "UTF-8";
+:root {
+  --orange:rgba(255, 140, 0, 1);
+  --darkorange:rgba(183, 100, 0, 1);
+  --yellow:#ffff00;
+  --darkyellow:#d0d000; }
+
+/*Цвет желтый #ffff00*/
+.bg-yellow {
+  background-color: var(--yellow); }
+
+.bg-yellow:hover {
+  background-color: var(--darkyellow); }
+
+.font-bold {
+  font-weight: 700; }
+
+/*Цвет оранжевый #ff8c00*/
+.bg-orange {
+  background-color: var(--orange); }
+
+.bg-orange:hover {
+  background-color: var(--orange); }
+
+.bg-orange-a02 {
+  background-color: rgba(255, 140, 0, 0.2); }
+
+.font-orange {
+  color: var(--orange); }
+
+.font-darkorange {
+  color: var(--darkorange); }
+
+/*# sourceMappingURL=colors.css.map */
