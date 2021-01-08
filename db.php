@@ -1,10 +1,13 @@
 <?php
+$db_server_ip = "192.168.0.100";
+$db_user_name = "root";
+$db_user_pass = "localhost-Om2TYL8SQOVg-Dpd";
+$db_name = "local_game_dev";
 
-$server = "127.0.0.1:3306";
-$user = "root";
-$pass = "123456";
-$db = "game_dev";
+$mysqli = mysqli_connect($db_server_ip, $db_user_name, $db_user_pass, $db_name, 3306);
+if ($mysqli->connect_errno) {
+    echo "Не удалось подключиться к MySQL: (".$mysqli->connect_errno.") ".$mysqli->connect_error;
+}
 
-mysql_connect($server, $user, $pass) or die ("No connection!");
-
-mysql_select_db($db) or die ("No connection on DB!!!");
+// echo $mysqli->host_info."</br>";
+// print_r($mysqli->client_info)."</br>";

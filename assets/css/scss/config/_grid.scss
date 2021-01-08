@@ -1,0 +1,305 @@
+$container: container;
+$containet_padding: 0 10px;
+
+$offset: 20px;
+$offset_one_side: ($offset / 2);
+$columns: 12;
+$atom: (100% / $columns);
+
+$break_xl: 1230px; // @media (min-width: $break_xl)
+$break_xl_container: 1230px;
+
+$break_lg: 1229px; // @media (max-width: $break_lg)
+$break_lg_container: 1024px;
+
+$break_md: 1023px; // @media (max-width: $break_md)
+$break_md_container: 768px;
+
+$break_sm: 767px; // @media (max-width: $break_sm)
+$break_sm_container: 100%;
+
+$break_xs: 413px; // @media (max-width: $break_xs)
+$break_xs_container: 100%;
+
+$break_xxs: 374px; // @media (max-width: $break_xs)
+$break_xxs_container: 100%;
+
+@mixin row-offsets($size) {
+  margin-left: ($size * -1);
+  margin-right: ($size * -1);
+}
+
+@mixin col-offsets($type) {
+  #{$type}-left: $offset_one_side;
+  #{$type}-right: $offset_one_side;
+}
+
+@mixin row($size:$offset_one_side) {
+  @include df;
+  @include fww;
+  @include row-offsets($size);
+}
+
+@mixin col($n) {
+  @include fls;
+  $val: $atom * $n;
+  width: #{$val};
+}
+
+@mixin col-pl($n:1,$dop:null) {
+  $val: $atom * $n;
+  @if ($dop != null) {
+    padding-left: calc(#{$val} + #{$dop});
+  } @else {
+    padding-left: $val;
+  }
+}
+
+@mixin col-pr($n:1,$dop:null) {
+  $val: $atom * $n;
+  @if ($dop != null) {
+    padding-right: calc(#{$val} + #{$dop});
+  } @else {
+    padding-right: $val;
+  }
+}
+
+.#{$container} {
+  margin: 0 auto;
+  display: block;
+  padding: $containet_padding;
+  position: relative;
+
+  @include xl {
+    width: $break_xl_container;
+    max-width: none;
+  }
+  @include lg {
+    width: $break_lg_container;
+    padding: 0 15px;
+  }
+  @include md {
+    width: $break_md_container;
+  }
+  @include sm {
+    width: $break_sm_container;
+  }
+  @include xs {
+    width: $break_xs_container;
+  }
+}
+
+.row {
+  @include row()
+}
+
+.wr {
+  @include df;
+}
+
+.wr-w {
+  @include df;
+  @include fww;
+}
+
+.wr-sb {
+  @include df;
+  @include jcsb;
+}
+
+.col {
+  @include fls(0);
+  @include col-offsets(padding);
+}
+
+@for $i from 1 through 12 {
+  .col#{$i} {
+    @include col($i);
+    @include col-offsets(padding);
+  }
+}
+
+@include lg {
+  @for $i from 1 through 12 {
+    .col#{$i}-lg {
+      @include col($i);
+      @include col-offsets(padding);
+    }
+  }
+}
+
+@include md {
+  @for $i from 1 through 12 {
+    .col#{$i}-md {
+      @include col($i);
+      @include col-offsets(padding);
+    }
+  }
+}
+
+@include sm {
+  @for $i from 1 through 12 {
+    .col#{$i}-sm {
+      @include col($i);
+      @include col-offsets(padding);
+    }
+  }
+}
+
+@include xs {
+  @for $i from 1 through 12 {
+    .col#{$i}-xs {
+      @include col($i);
+      @include col-offsets(padding);
+    }
+  }
+}
+
+.p0 {
+  padding: 0;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.plr0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.df {
+  @include df;
+}
+
+.fdr {
+  @include fdr;
+}
+
+.fdrr {
+  @include fdrr;
+}
+
+.fdc {
+  @include fdc;
+}
+
+.fdcr {
+  @include fdcr;
+}
+
+.fww {
+  @include fww;
+}
+
+.fwwr {
+  @include fwwr;
+}
+
+.jcc {
+  @include jcc;
+}
+
+.jcfe {
+  @include jcfe;
+}
+
+.jcfs {
+  @include jcfs;
+}
+
+.jcsa {
+  @include jcsa;
+}
+
+.jcsb {
+  @include jcsb;
+}
+
+.aib {
+  @include aib;
+}
+
+.aic {
+  @include aic;
+}
+
+.aife {
+  @include aife;
+}
+
+.aifs {
+  @include aifs;
+}
+
+.ais {
+  @include ais;
+}
+
+.acc {
+  @include acc;
+}
+
+.acfe {
+  @include acfe;
+}
+
+.acfs {
+  @include acfs;
+}
+
+.acsa {
+  @include acsa;
+}
+
+.acsb {
+  @include acsb;
+}
+
+.acs {
+  @include acs;
+}
+
+.asa {
+  @include asa;
+}
+
+.asb {
+  @include asb;
+}
+
+.asc {
+  @include asc;
+}
+
+.asfe {
+  @include asfe;
+}
+
+.asfs {
+  @include asfs;
+}
+
+.ass {
+  @include ass;
+}
+
+.fl {
+  @include fl;
+}
+
+.flg {
+  @include flg;
+}
+
+.fls {
+  @include fls;
+}
+
+.flb {
+  @include flb;
+}
