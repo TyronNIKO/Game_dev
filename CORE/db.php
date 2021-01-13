@@ -1,5 +1,5 @@
 <?php
-$db_server_ip = "192.168.0.100";
+$db_server_ip = "127.0.0.1";
 $db_user_name = "root";
 $db_user_pass = "localhost-Om2TYL8SQOVg-Dpd";
 $db_name = "local_game_dev";
